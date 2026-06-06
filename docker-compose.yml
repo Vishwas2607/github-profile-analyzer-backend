@@ -12,10 +12,13 @@ services:
       - mysql
 
     environment:
-      Node_ENV: production
-
-    env_file:
-      - .env
+      NODE_ENV: production
+      DB_HOST: mysql
+      DB_USER: root
+      DB_PASSWORD: root
+      DB_NAME: github_analyzer
+      DB_SSL: false
+      DB_PORT: 3306
 
     restart: unless-stopped
 
@@ -27,7 +30,7 @@ services:
       MYSQL_DATABASE: github_analyzer
 
     ports:
-      - "3306:3306"
+      - "127.0.0.1:3306:3306"
 
     volumes:
       - mysql_data:/var/lib/mysql
