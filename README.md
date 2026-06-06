@@ -157,9 +157,9 @@ DB_PASSWORD=
 DB_NAME=github_analyzer
 ```
 
-:::note
-No .env file is required if you run the project via Docker. The environment variables are already pre-configured and injected automatically inside the docker-compose.yml file.
-:::
+> [!NOTE]
+> No .env file is required if you run the project via Docker. The environment variables are already pre-configured and injected automatically inside the docker-compose.yml file.
+
 
 ---
 
@@ -264,7 +264,7 @@ The application uses a centralized global error handler to ensure consistent API
 
 ## Deployment
 
-Live API URL: **To be added**
+Live API URL: https://github-profile-analyzer-backend-ivri.onrender.com
 
 ---
 
