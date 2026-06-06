@@ -17,6 +17,18 @@ export const createProfile = (profile) => {
       avatar_url
     )
     VALUES (?,?,?,?,?,?,?,?,?,?,?)
+    
+    ON DUPLICATE KEY UPDATE
+      username         = VALUES(username),
+      name             = VALUES(name),
+      bio              = VALUES(bio),
+      followers        = VALUES(followers),
+      following        = VALUES(following),
+      public_repos     = VALUES(public_repos),
+      public_gists     = VALUES(public_gists),
+      account_age_days = VALUES(account_age_days),
+      profile_url      = VALUES(profile_url),
+      avatar_url       = VALUES(avatar_url)
   `;
 
   const values = [

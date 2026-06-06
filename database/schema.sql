@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS github_analyzer;
+USE github_analyzer;
+
 CREATE TABLE IF NOT EXISTS github_profiles (
     id INT PRIMARY KEY AUTO_INCREMENT,
 

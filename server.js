@@ -1,10 +1,10 @@
 import "dotenv/config";
 import app from "./app.js";
-import {connectDB} from "./config/db.js";
+import {initDatabase} from "./config/db.js";
 
 const PORT = process.env.PORT || 5000;
 
-connectDB().then(() => {
+initDatabase().then(() => {
     console.log("Database connection established");
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
