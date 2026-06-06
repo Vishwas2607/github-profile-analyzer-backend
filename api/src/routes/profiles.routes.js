@@ -4,7 +4,7 @@ import { analyzeProfileController, getAllProfilesController, getProfileByIdContr
 const profileRouter = express.Router();
 
 profileRouter.get("/", getAllProfilesController);
-profileRouter.get("/analyze/:username", analyzeProfileController);
+profileRouter.post("/analyze/:username", analyzeProfileController);
 profileRouter.get("/:id", getProfileByIdController);
 
 export default profileRouter;
