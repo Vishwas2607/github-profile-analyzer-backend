@@ -57,6 +57,8 @@ A Node.js backend service that analyzes GitHub user profiles using the GitHub Pu
 │   └── db.js
 ├── database
 │   └── schema.sql
+├── postman
+│   └── GitHub Profile Analyzer.postman_collection.json
 ├── app.js
 ├── server.js
 ├── Dockerfile
@@ -272,7 +274,7 @@ Live API URL: https://github-profile-analyzer-backend-ivri.onrender.com
 
 ### 1. Import Collection
 1. Open Postman and click **Import**.
-2. Select the file: `/postma/GitHub Profile Analyzer.postman_collection.json`.
+2. Select the file: `/postman/GitHub Profile Analyzer.postman_collection.json`.
 
 ### 2. Configure Environment
 1. Click the imported collection and go to the **Variables** tab.
