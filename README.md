@@ -268,6 +268,20 @@ Live API URL: https://github-profile-analyzer-backend-ivri.onrender.com
 
 ---
 
+## 🚀 Postman Setup
+
+### 1. Import Collection
+1. Open Postman and click **Import**.
+2. Select the file: `/postma/GitHub Profile Analyzer.postman_collection.json`.
+
+### 2. Configure Environment
+1. Click the imported collection and go to the **Variables** tab.
+2. Set the `baseUrl` variable values to: 
+   `https://github-profile-analyzer-backend-ivri.onrender.com`
+3. Save the changes.
+
+---
+
 ## Author
 
 Developed as part of a Node.js Backend Assignment.
